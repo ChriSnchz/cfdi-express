@@ -12,8 +12,8 @@ RFC = st.text_input("Ingresa tu RFC", placeholder='RFC').upper()
 FIEL_CER = st.file_uploader("Selecciona tu archivo .cer", type=["cer"])
 FIEL_KEY = st.file_uploader("Selecciona tu archivo .key", type=["key"])
 FIEL_PAS = st.text_input('Contraseña de la FIEL', type='password')
-FECHA_INICIAL = st.date_input('Fecha Inicial', datetime.date(2020, 1, 1))
-FECHA_FINAL = st.date_input('Fecha Final', datetime.date(2020, 6, 24))
+FECHA_INICIAL = st.date_input('Fecha Inicial')
+FECHA_FINAL = st.date_input('Fecha Final')
 
 if st.button('Iniciar Descarga'):
     try:
