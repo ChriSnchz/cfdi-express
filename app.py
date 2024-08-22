@@ -8,10 +8,7 @@ from cfdiclient import (Autenticacion, DescargaMasiva, Fiel, SolicitaDescarga,
 
 # Variables iniciales
 st.title('Descarga Masiva de CFDIs')
-RFC = text_input = st.text_input(
-        "Ingresa tu RFC",
-        placeholder='RFC',
-    )
+RFC = st.text_input("Ingresa tu RFC", placeholder='RFC').upper()
 FIEL_CER = st.file_uploader("Selecciona tu archivo .cer", type=["cer"])
 FIEL_KEY = st.file_uploader("Selecciona tu archivo .key", type=["key"])
 FIEL_PAS = st.text_input('Contraseña de la FIEL', type='password')
