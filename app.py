@@ -33,7 +33,7 @@ if st.button('Iniciar Descarga'):
         auth = Autenticacion(fiel)
         token = auth.obtener_token()
 
-        st.write(f'TOKEN: {token}')
+        #st.write(f'TOKEN: {token}')
 
         descarga = SolicitaDescarga(fiel)
 
